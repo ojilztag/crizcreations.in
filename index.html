@@ -100,8 +100,8 @@ h1 span{color:var(--lime)}
  .top{height:auto;min-height:70px;padding:9px 13px;grid-template-columns:minmax(0,1fr) auto;gap:8px}
  .topbrand{font-size:13px;gap:8px}.topbrand-mark{width:30px;height:30px;font-size:14px}.topbrand small{font-size:7px;letter-spacing:1.2px}
  .crumb{display:none}
- .topright{gap:0}
- .live{display:none}
+ .topright{gap:0;min-width:0}
+ .live{display:inline-flex;align-items:center;justify-content:center;font-size:7px;letter-spacing:.5px;padding:5px 7px;border:1px solid #c8f16955;border-radius:20px;background:#c8f1690c;margin-right:6px}
  .topcta{min-height:42px;padding:0 14px;gap:8px;font-size:10px;letter-spacing:.4px;white-space:nowrap}
  .topcta b{font-size:14px}
  .hero{padding:13px 12px 8px}
@@ -121,6 +121,28 @@ h1 span{color:var(--lime)}
  .btn{font-size:9px;padding:11px 10px}
 }
 
+
+/* Editorial hierarchy: showcase first, services next */
+@media(min-width:721px){
+ .hero{padding-bottom:14px}
+ #studio,#visuals{padding-top:18px}
+ #studio .section-top h2,#visuals .section-top h2{font-size:30px}
+}
+@media(max-width:720px){
+ #studio,#visuals{padding-top:20px}
+ #studio .section-top h2,#visuals .section-top h2{font-size:25px;line-height:1.18}
+ #studio .section-top p,#visuals .section-top p{display:block;font-size:13px;line-height:1.6}
+ .feature-grid{gap:11px}
+ .feature{min-height:235px}
+ .feature-stack .feature{min-height:145px}
+ .feature-copy{left:15px;right:15px;bottom:15px}
+ .feature-copy h3{font-size:20px;line-height:1.2}
+ .feature-copy p{font-size:12px;line-height:1.55}
+ .feature-stack .feature-copy h3{font-size:15px}
+ .photo-wall{grid-template-rows:145px 145px;gap:8px}
+ .photo span{font-size:10px}
+}
+
 </style>
 </head>
 <body>
@@ -130,7 +152,9 @@ h1 span{color:var(--lime)}
 <div class="side-label">YOUR SOUNDROOM</div>
 <nav class="navlist">
 <a class="active" href="#home"><i>⌂</i> Discover</a>
-<a href="#services"><i>▦</i> All service categories</a>
+<a href="#studio"><i>▣</i> The studio</a>
+ <a href="#visuals"><i>▧</i> Visual library</a>
+ <a href="#services"><i>▦</i> All service categories</a>
  <a href="#development"><i>✦</i> Project development</a>
  <a href="#playlist"><i>♫</i> Service playlist</a>
 <a href="#studio"><i>▣</i> The studio</a>
@@ -149,6 +173,20 @@ h1 span{color:var(--lime)}
 <main id="home">
 <header class="top"><a class="topbrand" href="#home"><span class="topbrand-mark">C</span><span>CRIZ CREATIONS<small>OFFICIAL CREATIVE STUDIO</small></span></a><div class="crumb">SOUNDROOM / <b>DISCOVER</b></div><div class="topright"><span class="live">● OPEN FOR PROJECTS</span><a class="topcta" href="https://wa.me/919744007633?text=Hi%20CRIZ%20CREATIONS%2C%20I%20would%20like%20to%20discuss%20a%20project."><span>LET’S TALK</span><b aria-hidden="true">↗</b></a></div></header>
 <section class="hero"><div class="hero-art"><div class="hero-copy"><div class="eyebrow">MUSIC • MEDIA • CREATOR CULTURE</div><h1>MAKE IT. FEEL IT.<br><span>RELEASE IT.</span></h1><p>A creative soundroom for artists, musicians and digital creators. We edit the story, design the look and help your work find its audience.</p><div class="btnrow"><a class="btn lime" href="#playlist">EXPLORE THE PLAYLIST ↓</a><a class="btn" href="https://wa.me/919744007633">BOOK A CREATIVE ↗</a></div></div><div class="hero-index">CRIZ / 001 — CREATOR CULTURE</div></div></section>
+<section class="section" id="studio"><div class="section-top"><div><div class="overline">BEHIND THE MIX</div><h2>Inside the creative studio</h2></div><p>Production, editing and campaign support — connected in one workflow.</p></div>
+<div class="feature-grid"><article class="feature"><img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1100&q=85" alt="Music recording studio"><div class="feature-copy"><small>01 / SOUND & VISION</small><h3>Build the full music experience.</h3><p>From audio preparation and video editing to release-ready artwork and promotional cuts.</p></div></article><div class="feature-stack"><article class="feature"><img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=85" alt="Video production workstation"><div class="feature-copy"><small>02 / EDIT SUITE</small><h3>Every frame has a purpose.</h3></div></article><article class="feature"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=800&q=85" alt="Concert crowd and stage"><div class="feature-copy"><small>03 / RELEASE & REACH</small><h3>Put your work in motion.</h3></div></article></div></div>
+</section>
+<section class="section" id="visuals"><div class="section-top"><div><div class="overline">THE VISUAL LIBRARY</div><h2>Frames, faces & frequencies.</h2></div><p>A visual moodboard for music videos, creator campaigns, artwork and live content.</p></div>
+<div class="photo-wall">
+<div class="photo"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=85" alt="Singer performing on stage"><span>LIVE PERFORMANCE</span></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=700&q=85" alt="Singer with microphone"><span>ARTIST STORIES</span></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=700&q=85" alt="Guitar performance"><span>MUSIC CULTURE</span></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=700&q=85" alt="Concert lights and crowd"><span>EVENT PROMOTION</span></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=700&q=85" alt="Music production desk"><span>IN THE STUDIO</span></div>
+</div>
+<p style="font-size:9px;color:#737987;margin-top:10px">Editorial moodboard imagery. Replace with approved CRIZ CREATIONS client projects and original production stills as they become available.</p>
+</section>
+
 
 
 <section class="category-intro" id="services">
@@ -207,19 +245,8 @@ h1 span{color:var(--lime)}
 <div class="track" data-title="Creator & Channel Growth" data-sub="Content direction • Brand consistency • Planning" data-img="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=200&q=80"><div class="trackno">08</div><img class="cover" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=160&q=80" alt="Live event audience"><div><div class="trackname">Creator & Channel Growth</div><div class="trackdesc">Content direction, brand consistency & planning</div></div><div class="tracktag">GROWTH</div><div class="tracktime"><button class="playbtn" aria-label="Select Creator Growth">▶</button></div></div>
 <div class="track" data-title="Music Rights & Copyright Support" data-sub="Permissions • Licences • Credits • Claims guidance" data-img="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=200&q=80"><div class="trackno">09</div><img class="cover" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=160&q=80" alt="Music production workstation"><div><div class="trackname">Music Rights & Copyright Support</div><div class="trackdesc">Permissions, licences, credits & claim guidance</div></div><div class="tracktag">RIGHTS</div><div class="tracktime"><button class="playbtn" aria-label="Select Copyright Support">▶</button></div></div>
 </div></section>
-<section class="section" id="studio"><div class="section-top"><div><div class="overline">BEHIND THE MIX</div><h2>Inside the creative studio</h2></div><p>Production, editing and campaign support — connected in one workflow.</p></div>
-<div class="feature-grid"><article class="feature"><img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1100&q=85" alt="Music recording studio"><div class="feature-copy"><small>01 / SOUND & VISION</small><h3>Build the full music experience.</h3><p>From audio preparation and video editing to release-ready artwork and promotional cuts.</p></div></article><div class="feature-stack"><article class="feature"><img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=85" alt="Video production workstation"><div class="feature-copy"><small>02 / EDIT SUITE</small><h3>Every frame has a purpose.</h3></div></article><article class="feature"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=800&q=85" alt="Concert crowd and stage"><div class="feature-copy"><small>03 / RELEASE & REACH</small><h3>Put your work in motion.</h3></div></article></div></div>
-</section>
-<section class="section" id="visuals"><div class="section-top"><div><div class="overline">THE VISUAL LIBRARY</div><h2>Frames, faces & frequencies.</h2></div><p>A visual moodboard for music videos, creator campaigns, artwork and live content.</p></div>
-<div class="photo-wall">
-<div class="photo"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=85" alt="Singer performing on stage"><span>LIVE PERFORMANCE</span></div>
-<div class="photo"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=700&q=85" alt="Singer with microphone"><span>ARTIST STORIES</span></div>
-<div class="photo"><img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=700&q=85" alt="Guitar performance"><span>MUSIC CULTURE</span></div>
-<div class="photo"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=700&q=85" alt="Concert lights and crowd"><span>EVENT PROMOTION</span></div>
-<div class="photo"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=700&q=85" alt="Music production desk"><span>IN THE STUDIO</span></div>
-</div>
-<p style="font-size:9px;color:#737987;margin-top:10px">Editorial moodboard imagery. Replace with approved CRIZ CREATIONS client projects and original production stills as they become available.</p>
-</section>
+
+
 <section class="section" id="pricing"><div class="section-top"><div><div class="overline">THE RATE CARD</div><h2>Choose your next release plan.</h2></div><p>Indicative starting prices in INR. Final scope and quote confirmed before work begins.</p></div>
 <div style="padding:12px 14px;border:1px solid #6b5a2a;background:#c8f1690c;border-radius:10px;color:#d5d0bd;font-size:9px;margin-bottom:13px">Suggested launch pricing — not a verified existing Christopher IP rate card. Advertising spend, creator fees, licensed assets and third-party charges are extra unless included in writing.</div>
 <div class="price-grid">
