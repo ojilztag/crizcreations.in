@@ -32,6 +32,45 @@ footer{padding:22px 38px 28px;color:#6f7582;font-size:9px;border-top:1px solid v
  @media(max-width:1000px){.build-intro{padding:15px 24px 6px}}
  @media(max-width:720px){.build-intro{padding:13px 13px 4px}.build-panel{padding:18px}.build-flow{grid-template-columns:repeat(2,1fr)}.need-grid{grid-template-columns:repeat(2,1fr)}}
 
+
+/* CATEGORY-FIRST SERVICE DIRECTORY */
+.category-intro{padding:24px 38px 12px}.category-shell{border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#171a24,#0e1016);padding:26px}
+.category-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:18px}.category-head h2{font:700 clamp(26px,3vw,40px) "Space Grotesk";letter-spacing:-1.5px;line-height:1.12}.category-head p{font-size:13px;color:#b7bdc9;max-width:430px;margin:0}
+.category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.category-card{border:1px solid #ffffff19;border-radius:15px;background:#0b0d13;padding:18px;min-width:0;display:flex;flex-direction:column;gap:9px}
+.category-card-top{display:flex;align-items:center;gap:12px}.category-icon{width:42px;height:42px;flex:0 0 42px;border-radius:12px;display:grid;place-items:center;background:#c8f16918;color:var(--lime);font-size:21px}
+.category-card h3{font:700 18px "Space Grotesk";line-height:1.2}.category-card p{font-size:12px;line-height:1.6;color:#b7bdc9;margin:0}
+.category-card ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px}
+.category-card li{font-size:11px;color:#e0e2e8;line-height:1.45;padding-left:13px;position:relative}.category-card li:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--lime);position:absolute;left:0;top:6px}
+.category-card .cat-cta{align-self:flex-start;margin-top:3px;border:1px solid #ffffff26;border-radius:30px;padding:9px 13px;font-size:10px;font-weight:900;color:var(--lime)}
+.category-note{font-size:12px;color:#b7bdc9;margin:17px 0 0;padding:14px;border-left:3px solid var(--lime);background:#ffffff08}
+.category-nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}.category-nav a{font-size:10px;padding:8px 11px;border:1px solid #ffffff22;border-radius:30px;color:#d8dbe2}
+@media(max-width:1000px){.category-intro{padding:20px 24px 10px}.category-shell{padding:21px}}
+@media(max-width:720px){
+ .category-intro{padding:17px 13px 8px}.category-shell{padding:17px 14px;border-radius:15px}
+ .category-head{display:block;margin-bottom:15px}.category-head h2{font-size:29px;letter-spacing:-1px;margin-bottom:9px}.category-head p{font-size:14px;line-height:1.65}
+ .category-grid{grid-template-columns:1fr;gap:11px}.category-card{padding:17px;gap:11px;border-radius:14px}
+ .category-card h3{font-size:19px}.category-card p{font-size:14px;line-height:1.65}.category-card li{font-size:13px;line-height:1.55}.category-card ul{gap:8px 10px}
+ .category-icon{width:46px;height:46px;flex-basis:46px;font-size:23px}.category-card .cat-cta{font-size:12px;padding:11px 15px;min-height:44px;display:inline-flex;align-items:center}
+ .category-note{font-size:13px;line-height:1.6}
+ /* Mobile readability and touch targets */
+ body{font-size:15px;line-height:1.65}.top{height:64px}.topcta{font-size:11px;padding:11px 13px}
+ .topbrand{font-size:14px}.topbrand small{font-size:7px}
+ .hero{padding:12px 12px 7px}.hero-art{min-height:490px}.hero-copy{padding:24px 18px}h1{font-size:clamp(43px,12vw,58px);line-height:1.02}
+ .hero-copy p{font-size:15px;line-height:1.65}.btn{font-size:12px;padding:13px 16px;min-height:46px}
+ .section{padding:28px 13px 12px}.section-top h2{font-size:25px}.section-top p{display:block;font-size:13px;line-height:1.6}
+ .overline{font-size:10px}.track{grid-template-columns:22px 46px minmax(0,1fr) 38px;gap:9px;padding:12px 10px;min-height:72px}
+ .cover{width:46px;height:46px}.trackname{font-size:13px}.trackdesc{font-size:11px;line-height:1.4}.playbtn{width:36px;height:36px;font-size:13px}
+ .playlist-head{padding:15px 13px}.playlist-head strong{font-size:12px}.playlist-head span{font-size:8px}
+ .feature-copy h3{font-size:21px}.feature-copy p{font-size:12px;line-height:1.55}
+ .about-copy{padding:22px}.about-copy h2{font-size:29px}.about-copy p{font-size:14px;line-height:1.65}
+ .contact h2{font-size:25px}.contact p{font-size:13px;line-height:1.65}.contact a{font-size:12px;padding:14px 17px;min-height:46px}
+ footer{font-size:11px;line-height:1.6}
+ .price-card{padding:19px}.price-card h3{font-size:20px}.price-card p,.price-card ul{font-size:13px;line-height:1.7}.price-card a{font-size:12px;padding:13px;min-height:44px}
+ .mobile-head{padding:9px 3px}.mobile-head a{font-size:10px}.mobile-head a span{font-size:17px}
+ .player{min-height:65px}.now b{font-size:12px}.now small{font-size:10px}
+}
+
 </style>
 </head>
 <body>
@@ -41,7 +80,8 @@ footer{padding:22px 38px 28px;color:#6f7582;font-size:9px;border-top:1px solid v
 <div class="side-label">YOUR SOUNDROOM</div>
 <nav class="navlist">
 <a class="active" href="#home"><i>⌂</i> Discover</a>
-<a href="#development"><i>✦</i> Project development</a>
+<a href="#services"><i>▦</i> All service categories</a>
+ <a href="#development"><i>✦</i> Project development</a>
  <a href="#playlist"><i>♫</i> Service playlist</a>
 <a href="#studio"><i>▣</i> The studio</a>
 <a href="#visuals"><i>▧</i> Visual library</a>
@@ -59,6 +99,30 @@ footer{padding:22px 38px 28px;color:#6f7582;font-size:9px;border-top:1px solid v
 <main id="home">
 <header class="top"><a class="topbrand" href="#home"><span class="topbrand-mark">C</span><span>CRIZ CREATIONS<small>OFFICIAL CREATIVE STUDIO</small></span></a><div class="crumb">SOUNDROOM / <b>DISCOVER</b></div><div class="topright"><span class="live">● OPEN FOR PROJECTS</span><a class="topcta" href="https://wa.me/919744007633">LET'S TALK ↗</a></div></header>
 <section class="hero"><div class="hero-art"><div class="hero-copy"><div class="eyebrow">MUSIC • MEDIA • CREATOR CULTURE</div><h1>MAKE IT.<br>FEEL IT.<br><span>RELEASE IT.</span></h1><p>A creative soundroom for artists, musicians and digital creators. We edit the story, design the look and help your work find its audience.</p><div class="btnrow"><a class="btn lime" href="#playlist">EXPLORE THE PLAYLIST ↓</a><a class="btn" href="https://wa.me/919744007633">BOOK A CREATIVE ↗</a></div></div><div class="hero-index">CRIZ / 001 — CREATOR CULTURE</div></div></section>
+
+
+<section class="category-intro" id="services">
+ <div class="category-shell">
+  <div class="category-head">
+   <div><div class="overline">THE COMPLETE CRIZ CREATIVE NETWORK</div><h2>One creative partner.<br>Every part of your idea.</h2></div>
+   <p>From a first idea to a finished campaign, CRIZ CREATIONS plans, creates, develops and promotes creative projects for artists, creators, businesses and organisations. Explore our service categories below.</p>
+  </div>
+  <nav class="category-nav" aria-label="Service categories">
+   <a href="#cat-music">Music & Artists</a><a href="#cat-video">Video & Editing</a><a href="#cat-audio">Audio</a><a href="#cat-design">Design</a><a href="#cat-youtube">YouTube</a><a href="#cat-promo">Promotion</a><a href="#cat-brand">Brands</a><a href="#cat-rights">Rights</a>
+  </nav>
+  <div class="category-grid">
+   <article class="category-card" id="cat-music"><div class="category-card-top"><span class="category-icon">♫</span><h3>01. Music, Artists & Release Development</h3></div><p>End-to-end creative support for singers, musicians, independent artists, bands and music projects.</p><ul><li>Song release planning</li><li>Artist identity & profile</li><li>Music video concepts</li><li>Lyric videos & visualisers</li><li>Release teasers & promos</li><li>Cover art & song posters</li><li>Artist promotional campaigns</li><li>Music launch coordination</li></ul><a class="cat-cta" href="https://wa.me/919744007633?text=I%20need%20Music%20and%20Artist%20Development%20support.">DISCUSS MUSIC PROJECT ↗</a></article>
+   <article class="category-card" id="cat-video"><div class="category-card-top"><span class="category-icon">▶</span><h3>02. Video Production & Editing</h3></div><p>Video creation and editing for music, creators, brands, events and digital platforms.</p><ul><li>Music video editing</li><li>Reels & YouTube Shorts</li><li>Long-form video editing</li><li>Promotional & ad videos</li><li>Intro & outro creation</li><li>Event highlights & recaps</li><li>Subtitles & captions</li><li>Video formatting for platforms</li></ul><a class="cat-cta" href="https://wa.me/919744007633?text=I%20need%20Video%20Production%20or%20Editing.">DISCUSS VIDEO PROJECT ↗</a></article>
+   <article class="category-card" id="cat-audio"><div class="category-card-top"><span class="category-icon">♫</span><h3>03. Audio Editing & Music Support</h3></div><p>Audio preparation and creative sound support for music, spoken content and video productions.</p><ul><li>Audio trimming & clean-up</li><li>Noise reduction support</li><li>Audio-video synchronisation</li><li>Voice-over editing</li><li>Podcast audio preparation</li><li>Background music placement</li><li>Basic mix support</li><li>Sound selection guidance</li></ul><a class="cat-cta" href="https://wa.me/919744007633?text=I%20need%20Audio%20Editing%20support.">DISCUSS AUDIO PROJECT ↗</a></article>
+   <article class="category-card" id="cat-design"><div class="category-card-top"><span class="category-icon">✦</span><h3>04. Graphic Design, Artwork & Visual Identity</h3></div><p>Visual assets that give a song, channel, event, product or brand a recognisable look.</p><ul><li>Logo & brand identity concepts</li><li>Posters & promotional banners</li><li>Song covers & album artwork</li><li>YouTube thumbnails</li><li>Social media post designs</li><li>Event & announcement creatives</li><li>Channel art & profile graphics</li><li>Presentation & digital creatives</li></ul><a class="cat-cta" href="https://wa.me/919744007633?text=I%20need%20Graphic%20Design%20or%20Artwork.">DISCUSS DESIGN PROJECT ↗</a></article>
+   <article class="category-card" id="cat-youtube"><div class="category-card-top"><span class="category-icon">▣</span><h3>05. YouTube & Creator Channel Development</h3></div><p>Practical creative and publishing support to help creators build a consistent channel identity.</p><ul><li>Channel setup guidance</li><li>Channel branding & artwork</li><li>Intro / outro packages</li><li>Thumbnail systems</li><li>Video upload support</li><li>Titles, descriptions & SEO basics</li><li>Content calendar planning</li><li>Channel review & improvement ideas</li></ul><a class="cat-cta" href="https://wa.me/919744007633?text=I%20need%20YouTube%20Channel%20Development.">DISCUSS CHANNEL PROJECT ↗</a></article>
+   <article class="category-card" id="cat-promo"><div class="category-card-top"><span class="category-icon">↗</span><h3>06. Digital Marketing, Promotion & Campaigns</h3></div><p>Promotion planning and creative campaign support to help your content reach its intended audience.</p><ul><li>Social media page promotion</li><li>Paid advertising campaign setup support</li><li>Boosting & ad creative preparation</li><li>Creator collaborations</li><li>Paid features & promotional placements</li><li>Campaign planning & scheduling</li><li>Product / service promotion</li><li>Launch & awareness campaigns</li></ul><a class="cat-cta" href="https://wa.me/919744007633?text=I%20need%20Digital%20Promotion%20or%20Campaign%20support.">DISCUSS PROMOTION ↗</a></article>
+   <article class="category-card" id="cat-brand"><div class="category-card-top"><span class="category-icon">◈</span><h3>07. Business, Brand, Event & Organisation Creatives</h3></div><p>Creative development for businesses, shops, products, events, communities and organisations.</p><ul><li>Business promotional packages</li><li>Product & service creatives</li><li>Brand launch campaigns</li><li>Event posters & promo videos</li><li>Social media content packs</li><li>Awareness & announcement videos</li><li>Campaign concepts & planning</li><li>Complete creative project coordination</li></ul><a class="cat-cta" href="https://wa.me/919744007633?text=I%20need%20Business%20or%20Brand%20Creative%20Development.">DISCUSS BRAND PROJECT ↗</a></article>
+   <article class="category-card" id="cat-rights"><div class="category-card-top"><span class="category-icon">©</span><h3>08. Copyright, Permissions & Release Support</h3></div><p>Guidance to help creators understand permissions and prepare content for responsible publishing.</p><ul><li>Music usage permission guidance</li><li>Copyright basics & claim guidance</li><li>Credit & attribution preparation</li><li>Licence enquiry coordination</li><li>Content clearance checklist</li><li>Release asset organisation</li><li>Platform publishing readiness</li><li>Rights-owner communication support</li></ul><a class="cat-cta" href="https://wa.me/919744007633?text=I%20need%20Copyright%20or%20Music%20Permission%20guidance.">DISCUSS RIGHTS SUPPORT ↗</a></article>
+  </div>
+  <p class="category-note"><strong>Custom projects are welcome.</strong> If your requirement is not listed, tell us what you want to build. We can discuss a tailored scope, timeline and quotation. Services, third-party costs, ad spend, creator fees and licensing are confirmed separately before work begins. Platform growth or advertising results are not guaranteed.</p>
+ </div>
+</section>
 
 <section class="build-intro" id="development"><div class="build-panel">
 <div class="overline">MORE THAN A SERVICE LIST</div>
@@ -120,7 +184,7 @@ footer{padding:22px 38px 28px;color:#6f7582;font-size:9px;border-top:1px solid v
 <div class="contact" id="contact"><div><div class="overline" style="color:#3a4d13">NEXT UP: YOUR PROJECT</div><h2>Got a song, a channel or an idea?</h2><p>Send your reference, links, deliverables and deadline. Let's plan the right creative package for your next release.</p></div><a href="https://wa.me/919744007633?text=Hi%20Christopher%2C%20I%20want%20to%20discuss%20a%20CRIZ%20CREATIONS%20project.">CHAT ON WHATSAPP ↗</a></div>
 <footer><span>© <span id="year"></span> CRIZ CREATIONS · Operated by Christopher IP</span><span>Music / Video / Audio / Design / Promotion</span><span>Kerala, India · Work with creators everywhere</span></footer>
 </main></div>
-<nav class="mobile-head"><a href="#home"><span>⌂</span>Discover</a><a href="#playlist"><span>♫</span>Playlist</a><a href="#studio"><span>▣</span>Studio</a><a href="#visuals"><span>▧</span>Visuals</a><a href="#pricing"><span>◈</span>Pricing</a></nav>
+<nav class="mobile-head"><a href="#home"><span>⌂</span>Discover</a><a href="#services"><span>▦</span>Services</a><a href="#playlist"><span>♫</span>Playlist</a><a href="#studio"><span>▣</span>Studio</a><a href="#visuals"><span>▧</span>Visuals</a><a href="#pricing"><span>◈</span>Pricing</a></nav>
 <div class="player"><div class="now"><img id="playerImg" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=160&q=80" alt="Selected creative track"><div><b id="playerTitle">Music Video Production</b><small id="playerSub">Cinematic edits • Lyric videos • Visualisers</small></div></div><div class="controls"><button class="controlbtn" aria-label="Previous">↶</button><button class="controlbtn main" id="playToggle" aria-label="Play or pause">Ⅱ</button><button class="controlbtn" aria-label="Next">↷</button><div class="progress"><i></i></div></div><div class="player-right"><b>CRIZ SOUNDROOM</b>SELECT A SERVICE TRACK</div></div>
 <script>
 const tracks=[...document.querySelectorAll('.track')],pTitle=document.getElementById('playerTitle'),pSub=document.getElementById('playerSub'),pImg=document.getElementById('playerImg');
