@@ -27,6 +27,11 @@ footer{padding:22px 38px 28px;color:#6f7582;font-size:9px;border-top:1px solid v
 .mobile-head{display:none}
 @media(max-width:1000px){.layout{grid-template-columns:175px minmax(0,1fr)}.side{padding:23px 13px 120px}.player{left:175px}.hero{padding:25px 24px 15px}.section{padding:28px 24px 18px}.top{padding:0 24px}.about-band,.contact{margin-left:24px;margin-right:24px}.photo-wall{grid-template-rows:135px 135px}}
 @media(max-width:720px){.layout{display:block}.side{display:none}.top{height:60px;padding:0 12px;gap:8px}.topbrand{font-size:12px;gap:7px}.topbrand-mark{width:25px;height:25px}.topbrand small{font-size:6px;letter-spacing:1px}.crumb{display:none}.topcta{padding:9px 10px;font-size:9px}.hero{padding:14px 13px 8px}.hero-art{min-height:470px;background-position:58% center}.hero-copy{padding:25px 20px}h1{font-size:52px;letter-spacing:-3px}.hero-copy p{font-size:12px}.hero-index{right:15px;bottom:13px}.section{padding:28px 13px 12px}.section-top h2{font-size:22px}.section-top p{display:none}.track{grid-template-columns:20px 42px minmax(0,1fr) 32px;gap:9px;padding:9px 10px}.cover{width:42px;height:42px}.tracktag,.tracktime{display:none}.trackname{font-size:11px}.trackdesc{font-size:9px}.feature-grid{grid-template-columns:1fr}.feature{min-height:220px}.feature-stack{grid-template-columns:1fr 1fr}.feature-stack .feature{min-height:135px}.feature-stack .feature img{min-height:135px}.feature-copy h3{font-size:19px}.feature-stack .feature-copy{left:12px;bottom:12px}.feature-stack .feature-copy h3{font-size:14px}.photo-wall{grid-template-rows:125px 125px;gap:7px}.photo span{font-size:9px;left:9px;bottom:8px}.price-grid{grid-template-columns:1fr}.price-card p{min-height:0}.about-band{margin:25px 13px 15px;grid-template-columns:1fr}.about-band img{min-height:180px;max-height:220px}.about-copy{padding:21px}.contact{margin:22px 13px;padding:22px;display:block}.contact h2{font-size:23px}.contact a{display:inline-block;margin-top:10px}.player{left:0;right:0;min-height:67px;padding:8px 12px;grid-template-columns:1fr auto;gap:8px}.now img{width:39px;height:39px}.controls{display:flex;align-items:center;gap:2px}.controls .controlbtn:not(.main){display:none}.progress,.player-right{display:none}footer{padding:20px 14px 90px}.mobile-head{display:flex;position:fixed;bottom:67px;left:0;right:0;background:#0d0f15f0;border-top:1px solid var(--line);padding:8px 4px;z-index:30;justify-content:space-around}.mobile-head a{font-size:8px;color:#b6bdca;text-align:center}.mobile-head a span{display:block;font-size:15px;margin-bottom:2px;color:var(--lime)}main{padding-bottom:130px}}
+
+ .build-intro{padding:18px 38px 8px}.build-panel{border:1px solid #343845;border-radius:18px;background:radial-gradient(circle at 90% 0%,#333044 0%,#171923 38%,#101219 100%);padding:25px}.build-panel h2{font-size:clamp(25px,3vw,38px);letter-spacing:-1.5px;margin:6px 0 10px}.build-lead{font-size:12px;color:#c6cad3;max-width:760px;margin:0 0 18px}.build-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0}.build-step{border:1px solid #ffffff19;border-radius:11px;padding:12px;background:#ffffff08}.build-step b{display:block;font:700 11px "Space Grotesk";color:var(--lime)}.build-step span{font-size:9px;color:#aeb4c0}.need-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.need-card{border:1px solid #ffffff19;border-radius:12px;padding:13px;background:#0b0d13}.need-card b{display:block;font:700 12px "Space Grotesk";margin-bottom:5px}.need-card p{font-size:9px;color:#aeb4c0;margin:0}.build-foot{font-size:10px;color:#aeb4c0;margin:16px 0 0}.build-foot strong{color:var(--lime)}
+ @media(max-width:1000px){.build-intro{padding:15px 24px 6px}}
+ @media(max-width:720px){.build-intro{padding:13px 13px 4px}.build-panel{padding:18px}.build-flow{grid-template-columns:repeat(2,1fr)}.need-grid{grid-template-columns:repeat(2,1fr)}}
+
 </style>
 </head>
 <body>
@@ -36,7 +41,8 @@ footer{padding:22px 38px 28px;color:#6f7582;font-size:9px;border-top:1px solid v
 <div class="side-label">YOUR SOUNDROOM</div>
 <nav class="navlist">
 <a class="active" href="#home"><i>⌂</i> Discover</a>
-<a href="#playlist"><i>♫</i> Service playlist</a>
+<a href="#development"><i>✦</i> Project development</a>
+ <a href="#playlist"><i>♫</i> Service playlist</a>
 <a href="#studio"><i>▣</i> The studio</a>
 <a href="#visuals"><i>▧</i> Visual library</a>
 <a href="#pricing"><i>◈</i> Rate card</a>
@@ -53,6 +59,28 @@ footer{padding:22px 38px 28px;color:#6f7582;font-size:9px;border-top:1px solid v
 <main id="home">
 <header class="top"><a class="topbrand" href="#home"><span class="topbrand-mark">C</span><span>CRIZ CREATIONS<small>OFFICIAL CREATIVE STUDIO</small></span></a><div class="crumb">SOUNDROOM / <b>DISCOVER</b></div><div class="topright"><span class="live">● OPEN FOR PROJECTS</span><a class="topcta" href="https://wa.me/919744007633">LET'S TALK ↗</a></div></header>
 <section class="hero"><div class="hero-art"><div class="hero-copy"><div class="eyebrow">MUSIC • MEDIA • CREATOR CULTURE</div><h1>MAKE IT.<br>FEEL IT.<br><span>RELEASE IT.</span></h1><p>A creative soundroom for artists, musicians and digital creators. We edit the story, design the look and help your work find its audience.</p><div class="btnrow"><a class="btn lime" href="#playlist">EXPLORE THE PLAYLIST ↓</a><a class="btn" href="https://wa.me/919744007633">BOOK A CREATIVE ↗</a></div></div><div class="hero-index">CRIZ / 001 — CREATOR CULTURE</div></div></section>
+
+<section class="build-intro" id="development"><div class="build-panel">
+<div class="overline">MORE THAN A SERVICE LIST</div>
+<h2>Bring the idea. We'll build the creative.</h2>
+<p class="build-lead">CRIZ CREATIONS is a creative development and promotion partner for artists, creators, businesses and organisations. Tell us what you are trying to launch, improve or communicate. We can plan the right combination of creative work, production, digital content and promotion — from the first idea to final delivery.</p>
+<div class="build-flow">
+<div class="build-step"><b>01 / DISCOVER</b><span>Understand your idea, audience and goal</span></div>
+<div class="build-step"><b>02 / PLAN</b><span>Shape the concept, scope and timeline</span></div>
+<div class="build-step"><b>03 / CREATE</b><span>Design, edit, produce and develop</span></div>
+<div class="build-step"><b>04 / PROMOTE</b><span>Prepare campaigns and platform content</span></div>
+<div class="build-step"><b>05 / DELIVER</b><span>Review, revise and hand over the work</span></div>
+</div>
+<div class="overline">WHAT DO YOU NEED TO DEVELOP?</div>
+<div class="need-grid">
+<div class="need-card"><b>♫ Music & Artists</b><p>Song release packs, music videos, lyric videos, cover art, reels, artist identity and release campaigns.</p></div>
+<div class="need-card"><b>▶ Creators & YouTubers</b><p>Channel identity, thumbnails, intros, shorts, editing, content plans and audience promotion.</p></div>
+<div class="need-card"><b>✦ Business & Brands</b><p>Brand creatives, product promotions, ad videos, posters, social media content and campaign support.</p></div>
+<div class="need-card"><b>▣ Events & Organisations</b><p>Event promos, highlight edits, announcements, digital posters, documentation and awareness campaigns.</p></div>
+</div>
+<p class="build-foot"><strong>Not sure which service you need?</strong> No problem. Share your idea and desired result. We’ll discuss the scope and suggest a suitable creative solution before confirming the work.</p>
+</div></section>
+
 <section class="section" id="playlist"><div class="section-top"><div><div class="overline">PICK YOUR FREQUENCY</div><h2>The service playlist</h2></div><p>Tap a track to explore a creative service. One studio, different creative frequencies.</p></div>
 <div class="playlist-wrap"><div class="playlist-head"><strong>♫ CRIZ CREATIONS — SERVICE MIX</strong><span>9 CREATIVE TRACKS · ALL GENRES</span></div>
 <div class="track selected" data-title="Music Video Production" data-sub="Cinematic edits • Lyric videos • Visualisers" data-img="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=200&q=80"><div class="trackno">01</div><img class="cover" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=160&q=80" alt="Live music concert"><div><div class="trackname">Music Video Production</div><div class="trackdesc">Cinematic edits, lyric videos & visualisers</div></div><div class="tracktag">VIDEO</div><div class="tracktime"><button class="playbtn" aria-label="Select Music Video Production">▶</button></div></div>
